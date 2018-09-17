@@ -1,0 +1,101 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>
+Deep Back-Projection Networks For Super-Resolution
+</title>
+
+<style type="text/css" media="all">
+    
+#primarycontent {
+    MARGIN-LEFT: auto; WIDTH: expression(document.body.clientWidth > 800? "800px": "auto" ); MARGIN-RIGHT: auto; TEXT-ALIGN: left; max-width: 
+800px } 
+
+body {
+    TEXT-ALIGN: center
+}
+
+.tab { margin-left: 20px; }
+</style>
+
+</head>
+
+<body>
+
+<div id="primarycontent">
+
+<center> 
+<h1> Deep Back-Projection Networks For Super-Resolution </h1>
+<h3><a href="http://www.toyota-ti.ac.jp/Lab/Denshi/iim/members/muhammad.haris/">Muhammad Haris</a>, 
+<a href="http://ttic.uchicago.edu/~gregory/">Greg Shakhnarovich</a>, 
+<a href="http://www.toyota-ti.ac.jp/Lab/Denshi/iim/ukita/">Norimichi Ukita</a> <br></h3>
+
+<h3>Winner (1st) of <a href="http://www.vision.ee.ethz.ch/ntire18/">NTIRE2018</a> Competition (Track: x8 Bicubic Downsampling)</h3>
+
+<img src="./DBPN.png" width=100%>
+</center>
+
+<h2>Abstract</h2>
+The feed-forward architectures of recently proposed deep super-resolution networks learn representations of low-resolution
+inputs, and the non-linear mapping from those to high-resolution output. However, this approach does not fully address the mutual
+dependencies of low- and high-resolution images. We propose Deep Back-Projection Networks (DBPN), that exploit iterative up- and down-sampling
+layers, providing an error feedback mechanism for projection errors at each stage. We construct mutually-connected up- and down-sampling
+stages each of which represents different types of image degradation and high-resolution components. We show that extending this idea to
+allow concatenation of features across up- and down-sampling stages (Dense DBPN) allows us to reconstruct further improve super-resolution, yielding superior results and in particular
+establishing new state of the art results for large scaling factors such as 8x across multiple data sets. 
+<p class="tab">
+</p>
+
+<h3>Manuscript</h3>
+<ul>
+  <li>CVPR2018 <a href="./DBPN_cvpr2018_final.pdf">[pdf]</a> <a href="http://arxiv.org/abs/1803.02735">[arXiv]</a></li>
+  <li><a href="./DBPN_cvpr2018_supp_material.pdf">Supplementary Material</a></li>
+  <li><a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w13/Timofte_NTIRE_2018_Challenge_CVPR_2018_paper.pdf">NTIRE2018 Technical Report</a></li>
+</ul>
+
+<h3>Code</h3>
+<ul>
+  <li><a href="https://github.com/alterzero/DBPN-caffe">Caffe </a> </li>
+  <li><a href="https://github.com/alterzero/DBPN-Pytorch">Pytorch</a></li>
+</ul>
+
+<div class="row">
+  <div class="column"></div>
+  <div class="column"></div>
+</div>
+
+
+<h3>Results on 8x</h3>
+<p class="tab">
+<img src="./8x_result.png" width=100%>
+</p>
+
+<h3>Citation</h3>
+<p class="tab">
+Muhammad Haris, Greg Shakhnarovich, and Norimichi Ukita, "Deep Back-Projection Networks For Super-Resolution", Proc. of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018.<br>
+</p>
+
+<center>
+<!-- Default Statcounter code for DBPN
+https://www.toyota-ti.ac.jp/Lab/Denshi/iim/members/muhammad.haris/projects/DBPN.html
+-->
+<script type="text/javascript">
+var sc_project=11696894; 
+var sc_invisible=0; 
+var sc_security="c2994edd"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11696894/0/c2994edd/0/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</center>
+
+</body>
+</html>

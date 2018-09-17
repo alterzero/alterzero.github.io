@@ -1,0 +1,97 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>
+Task-Driven Super-Resolution
+</title>
+
+<style type="text/css" media="all">
+    
+#primarycontent {
+    MARGIN-LEFT: auto; WIDTH: expression(document.body.clientWidth > 800? "800px": "auto" ); MARGIN-RIGHT: auto; TEXT-ALIGN: left; max-width: 
+800px } 
+
+body {
+    TEXT-ALIGN: center
+}
+
+.tab { margin-left: 20px; }
+</style>
+
+</head>
+
+<body>
+
+<div id="primarycontent">
+
+<center> 
+<h1> Task-Driven Super-Resolution </h1>
+<h3><a href="http://www.toyota-ti.ac.jp/Lab/Denshi/iim/members/muhammad.haris/">Muhammad Haris</a>, 
+<a href="http://ttic.uchicago.edu/~gregory/">Greg Shakhnarovich</a>, 
+<a href="http://www.toyota-ti.ac.jp/Lab/Denshi/iim/ukita/">Norimichi Ukita</a> <br></h3>
+<img src="./TDSR_result.png" width=100%>
+</center>
+
+
+<h2>Abstract</h2>
+  We consider how image super resolution (SR) can contribute to an
+  object detection task in low-resolution images. Intuitively, SR
+  gives a positive impact on the object detection task. While several
+  previous works demonstrated that this intuition is correct, SR and
+  detector are optimized independently in these works. This paper
+  proposes a novel framework to train a deep neural network where the
+  SR sub-network explicitly incorporates a detection loss in its
+  training objective, via a tradeoff with a traditional detection
+  loss.  This end-to-end training procedure allows us to train SR
+  preprocessing for any differentiable detector. We demonstrate that
+  our task-driven SR consistently and significantly improves accuracy
+  of an object detector on low-resolution images for a variety of
+  conditions and scaling factors.
+<p class="tab">
+</p>
+
+<h3>Manuscript</h3>
+<ul>
+  <li> <a href="./TDSR.pdf">[pdf]</a> <a href="https://arxiv.org/abs/1803.11316">[arXiv]</a></li>
+</ul>
+
+<h3>Code</h3>
+<ul>
+  <li>Available upon publication</a></li>
+</ul>
+
+<div class="row">
+  <div class="column"></div>
+  <div class="column"></div>
+</div>
+
+
+<h3>Citation</h3>
+<p class="tab">
+Muhammad Haris, Greg Shakhnarovich, and Norimichi Ukita. "Task-Driven Super Resolution: Object Detection in Low-resolution Images." arXiv preprint arXiv:1803.11316 (2018).
+</p>
+
+
+<center>
+<!-- Default Statcounter code for TDSR
+https://www.toyota-ti.ac.jp/Lab/Denshi/iim/members/muhammad.haris/projects/TDSR.html
+-->
+<script type="text/javascript">
+var sc_project=11696900; 
+var sc_invisible=0; 
+var sc_security="dc7ac9a4"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11696900/0/dc7ac9a4/0/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</center>
+
+</body>
+</html>
