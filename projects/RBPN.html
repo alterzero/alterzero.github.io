@@ -20,6 +20,8 @@ body {
 
 </head>
 
+
+
 <body>
 
 <div id="primarycontent">
@@ -29,9 +31,54 @@ body {
 <h3><a href="https://alterzero.github.io">Muhammad Haris</a>, 
 <a href="http://ttic.uchicago.edu/~gregory/">Greg Shakhnarovich</a>, 
 <a href="http://www.toyota-ti.ac.jp/Lab/Denshi/iim/ukita/">Norimichi Ukita</a> <br></h3>
-<h2>More details coming soon!</h2>
+<img src="RBPN.png" width=100%>
 </center>
 
+<h2>Abstract</h2>
+We proposed a novel architecture for the problem of video super-resolution. 
+We integrate spatial and temporal contexts from continuous
+video frames using a recurrent encoder-decoder module, that fuses
+multi-frame information with the more traditional, single frame
+super-resolution path for the target frame.
+In contrast to most prior work where frames are pooled together by stacking or warping, our model, the Recurrent
+Back-Projection Network (RBPN) treats each context frame as a separate
+source of information. These sources are combined in an iterative
+refinement framework inspired by the idea of back-projection in
+multiple-image super-resolution. This is aided by explicitly representing estimated inter-frame
+motion with respect to the target, rather than explicitly aligning
+frames. We propose a new video super-resolution benchmark, allowing
+evaluation at a larger scale and considering videos in different motion regimes.
+Experimental results demonstrate that our RBPN is superior to existing methods on several datasets.
+<p class="tab">
+</p>
+
+<h3>Manuscript</h3>
+<ul>
+  <li>CVPR2019 <a href="rbpn_cvpr2019.pdf">[pdf]</a> <a href="http://arxiv.org/abs/1803.02735">[arXiv]</a></li>
+  <li><a href="rbpn_supp_cvpr2019.pdf">Supplementary Material</a></li>
+</ul>
+
+<h3>Code</h3>
+<ul>
+  <li><a href="https://github.com/alterzero/RBPN-Pytorch">Pytorch</a></li>
+</ul>
+
+<h2>Results on 4x</h2>
+<h3>SPMCS</h3>
+<p class="tab">
+<img src="./RBPN_results_spmcs.png" width=100%>
+</p>
+
+<h3>Vimeo90k</h3>
+<p class="tab">
+<img src="./RBPN_results_vimeo.png" width=100%>
+</p>
+
+
+<h3>Citation</h3>
+<p class="tab">
+Muhammad Haris, Greg Shakhnarovich, and Norimichi Ukita, "Recurrent Back-Projection Network For Video Super-Resolution", Proc. of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019.<br>
+</p>
 
 
 
