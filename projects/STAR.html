@@ -1,0 +1,106 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>
+Space-Time-Aware Multi-Resolution Video Enhancement
+</title>
+
+<style type="text/css" media="all">
+    
+#primarycontent {
+    MARGIN-LEFT: auto; WIDTH: expression(document.body.clientWidth > 800? "800px": "auto" ); MARGIN-RIGHT: auto; TEXT-ALIGN: left; max-width: 
+800px } 
+
+body {
+    TEXT-ALIGN: center
+}
+
+.tab { margin-left: 20px; }
+</style>
+
+</head>
+
+
+
+<body>
+
+<div id="primarycontent">
+
+<center> 
+<h1> Space-Time-Aware Multi-Resolution Video Enhancement </h1>
+<h3><a href="https://alterzero.github.io">Muhammad Haris</a>, 
+<a href="http://ttic.uchicago.edu/~gregory/">Greg Shakhnarovich</a>, 
+<a href="http://www.toyota-ti.ac.jp/Lab/Denshi/iim/ukita/">Norimichi Ukita</a> <br></h3>
+<img src="STAR2.png" width=100%>
+</center>
+
+<h2>Abstract</h2>
+We consider the problem of space-time super-resolution (ST-SR): 
+increasing spatial resolution of video frames and simultaneously
+interpolating frames to increase the frame rate.
+Modern approaches handle these axes one at a time. In contrast, our
+proposed model called STARnet super-resolves jointly in space and
+time. This allows us to leverage mutually informative
+relationships between time and space: higher resolution can provide
+more detailed information about motion,
+and higher frame-rate can provide better pixel alignment.
+The components of our model that generate latent low- and
+high-resolution representations during ST-SR can be used to finetune a
+specialized mechanism for just spatial or just temporal SR.
+Experimental results demonstrate that STARnet improves the
+performances of space-time, spatial, and temporal video SR
+by substantial margins on publicly available datasets.
+<p class="tab">
+</p>
+
+<center>
+<img src="STAR1.png" width=100%>
+</center>
+
+
+<h3>Manuscript</h3>
+<ul>
+  <li>CVPR2020 <a href="star_cvpr2020.pdf">[pdf]</a> <a href="http://arxiv.org/abs/1903.10128">[arXiv]</a></li>
+  <li><a href="star_supp_cvpr2020.pdf">Supplementary Material</a></li>
+</ul>
+
+<h3>Code</h3>
+<ul>
+  <li><a href="https://github.com/alterzero/STARnet">Pytorch</a></li>
+</ul>
+
+<h2>Results</h2>
+
+<h3>Vimeo90k</h3>
+<p class="tab">
+<img src="./STAR3.png" width=100%>
+</p>
+
+
+<h3>Citation</h3>
+<p class="tab">
+Muhammad Haris, Greg Shakhnarovich, and Norimichi Ukita, "Space-Time-Aware Multi-Resolution Video Enhancement", Proc. of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.<br>
+</p>
+
+<center>
+<!-- Default Statcounter code for RBPN
+https://alterzero.github.io/projects/RBPN.html -->
+<script type="text/javascript">
+var sc_project=11975402; 
+var sc_invisible=0; 
+var sc_security="ae4272ab"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/11975402/0/ae4272ab/0/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</center>
+
+</body>
+</html>
